@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Pantry Item"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Name (e.g., Milk, Rice)"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editItemQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity (e.g., 2)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editItemUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unit (e.g., liters, kg, pcs)"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editItemExpiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expiry Date (YYYY-MM-DD)"
+        android:inputType="date"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnSaveItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Item to Pantry"
+        android:backgroundTint="@android:color/holo_purple"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
